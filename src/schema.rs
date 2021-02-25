@@ -4,12 +4,12 @@ use serde::{Deserialize, Deserializer};
 #[derive(Debug, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub struct Response {
-    stat: String,
+    pub stat: String,
     #[serde(deserialize_with = "parse_date")]
-    date: NaiveDate,
-    title: String,
-    fields: Vec<String>,
-    data: Vec<Data>,
+    pub date: NaiveDate,
+    pub title: String,
+    pub fields: Vec<String>,
+    pub data: Vec<Data>,
 }
 
 #[derive(Debug, Deserialize)]
