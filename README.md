@@ -12,5 +12,4 @@ a library for crawling twse.com.tw in RUST!
 - [ ] a lot of more
 
 ### the crawling pool
-since the TWSE has a rate limit about only allowing 3 requests in every 5 seconds.
 
